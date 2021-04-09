@@ -12,12 +12,32 @@
 	\frametitle{Deprecated/Removed Functions}
 	\framesubtitle{Property \texttt{special} of TCA \texttt{type=select}}
 
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
 	\begin{itemize}
-		\item Item 1
-		\item Item 2
-		\item Item 3
+		\item The property \texttt{special} of the TCA \texttt{type=select}
+			has been marked as \textbf{deprecated}
+		\item Developers are adviced to use \texttt{itemsProcFunc} instead
+\begin{lstlisting}
+'columns' => [
+  'field' => [
+    'label' => '...',
+	'config' => [
+	  'type' => 'select',
+	  // 'special' => 'tables'
+	  'itemsProcFunc' => MyExtension::class . '->method'
+	  ...
+	]
+  ]
+]
+\end{lstlisting}
+
+		\item Further details about \texttt{itemsProcFunc} can be found in the
+		 	\href{documentation}{https://docs.typo3.org/m/typo3/reference-tca/master/en-us/ColumnsConfig/CommonProperties/ItemsProcFunc.html}
 	\end{itemize}
 
 \end{frame}
+
+
 
 % ------------------------------------------------------------------------------
