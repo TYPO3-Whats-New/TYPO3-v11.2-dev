@@ -19,6 +19,7 @@
 	\begin{figure}
 		\includegraphics[width=0.70\linewidth]{ChangesForIntegratorsAndDevelopers/1617959943-TableConfigurationArrayDescription}
 	\end{figure}
+	\vspace{-0.4cm}
 	\begin{itemize}
 		\item Integrators can now overwrite the description by using Page TSconfig
 	\end{itemize}
@@ -38,20 +39,16 @@
 	\end{itemize}
 
 	\begin{itemize}
-		\item Examples:
-		\begin{itemize}
-			\item Example 1 - set/overwrite a description:
+		\item Example 1 - set/overwrite a description:
 \begin{lstlisting}
-TCEFORM.<table>.<field>.description = The headline is the text...
+TCEFORM.<table>.<field>.description = <text>
+TCEFORM.tt_content.header.description = The headline is the text...
 \end{lstlisting}
-		\end{itemize}
 
-		\begin{itemize}
-			\item Example 2 - on a per record type basis:
+		\item Example 2 - on a per record type basis:
 \begin{lstlisting}
 TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
 \end{lstlisting}
-		\end{itemize}
 	\end{itemize}
 
 \end{frame}
