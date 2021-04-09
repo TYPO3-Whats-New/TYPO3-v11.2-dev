@@ -1,0 +1,27 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Important | 88824 | Add cache for error page handling
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{Error Page Caching}
+
+	\begin{itemize}
+		\item The content of the 404 error ("page not found") is now cached
+			in the TYPO3 page cache.
+		\item Integrators and administrators are adviced not to output any
+			sensitive information such as the user name of an authenticated
+			frontend user.
+		\item If the 404 error page shows dynamic content, we recommend to
+			implement a custom PHP-based error handler.
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
