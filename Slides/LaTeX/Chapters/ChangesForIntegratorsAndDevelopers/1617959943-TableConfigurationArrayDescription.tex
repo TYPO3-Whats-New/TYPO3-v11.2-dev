@@ -44,11 +44,15 @@
 TCEFORM.<table>.<field>.description = <text>
 TCEFORM.tt_content.header.description = The headline is the text...
 \end{lstlisting}
-
 		\item Example 2 - on a per record type basis:
 \begin{lstlisting}
 TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
 \end{lstlisting}
+		\item Example 3 - referring to a language file:
+\begin{lstlisting}
+TCEFORM.tt_content.header.description = LLL:EXT:my_ext/Resources/Private/Language/locallang.xlf:description
+\end{lstlisting}
+
 	\end{itemize}
 
 \end{frame}
