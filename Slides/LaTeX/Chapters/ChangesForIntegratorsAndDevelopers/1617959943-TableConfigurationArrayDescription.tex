@@ -10,32 +10,50 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{TCA Description}
+	\framesubtitle{TCA Description (1)}
 
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item A description can be added to every TCA field in the backend
-			since TYPO3 v9:
+		\item Since TYPO3 v9, every TCA field can have a description next to
+			its label. For example:
 	\end{itemize}
-
 	\begin{figure}
-		\includegraphics[width=0.80\linewidth]{ChangesForIntegratorsAndDevelopers/1617959943-TableConfigurationArrayDescription}
+		\includegraphics[width=0.70\linewidth]{ChangesForIntegratorsAndDevelopers/1617959943-TableConfigurationArrayDescription}
 	\end{figure}
+	\begin{itemize}
+		\item Integrators can now overwrite the description by using Page TSconfig
+	\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------------------------
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{TCA Description (2)}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item It is now possible to override the TCA description property with Page TSconfig:
+		\item Example 1:
 	\end{itemize}
+
 \begin{lstlisting}
 TCEFORM.<table>.<field>.description = The headline is the text...
+\end{lstlisting}
+
+	\begin{itemize}
+		\item Example 2 - on a per record type basis:
+	\end{itemize}
+
+\begin{lstlisting}
+TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
 \end{lstlisting}
 
 	\begin{itemize}
 		\item This option can also be used to set a description for a field
 			that does not feature a TCA description yet
 	\end{itemize}
-
-% TCEFORM.aTable.aField.types.aType.description = override description for aType
 
 \end{frame}
 
