@@ -17,11 +17,16 @@
 
 	\begin{itemize}
 		\item Under some rare circumstances, integrators want to disable the
-			\texttt{hreflang} and/or \texttt{canonical} tags
+			\texttt{hreflang} and/or \texttt{canonical} tags used in links
 		\item This is now possible on a per page-by-page basis by using TypoScript
-		\item For example:
+		\item Examples:
 \begin{lstlisting}
+# Disable hreflang attributes:
 config.disableHrefLang = 1
+\end{lstlisting}
+\vspace{0.4cm}
+\begin{lstlisting}
+# Disable canonical URLs:
 config.disableCanonical = 1
 \end{lstlisting}
 	\end{itemize}
