@@ -1,0 +1,30 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 93188 | Possibility to disable hreflang per page (related: 93606)
+% Feature | 93606 | Possibility to disable canonical per page (related: 93188)
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{...}
+
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item Under some rare circumstances, integrators want to disable the
+			\texttt{hreflang} and/or \texttt{canonical} tags
+		\item This is now possible on a per page-by-page basis by using TypoScript
+		\item For example:
+\begin{lstlisting}
+config.disableHrefLang = 1
+config.disableCanonical = 1
+\end{lstlisting}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
