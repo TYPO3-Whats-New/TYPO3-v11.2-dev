@@ -1,0 +1,41 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 93591 | Allow group id lookup in conditions with array operator
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{User Group Lookups in Conditions}
+
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item The following user group IDs are now available in TypoScript:
+
+		\begin{itemize}
+			\item \textbf{Currently logged-in backend user}\newline
+				(as \texttt{backend.user.userGroupIds} in the frontend and backend)
+			\item \textbf{Currently logged-in frontend user}\newline
+				(as \texttt{frontend.user.userGroupIds} in the frontend)
+		\end{itemize}
+
+		\item This lets integrators use native the Symfony Expression syntax in
+			TypoScript conditions to lookup user groups
+		\item For example:
+\begin{lstlisting}
+[4 in frontend.user.userGroupIds]
+\end{lstlisting}
+\vspace{-0.2cm}
+\begin{lstlisting}
+[2 in backend.user.userGroupIds]
+\end{lstlisting}
+	\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
