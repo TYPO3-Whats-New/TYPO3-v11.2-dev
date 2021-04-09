@@ -12,8 +12,6 @@
 	\frametitle{Changes for Integrators and Developers}
 	\framesubtitle{TCA Description (1)}
 
-	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
-
 	\begin{itemize}
 		\item Since TYPO3 v9, every TCA field can have a description next to
 			its label. For example:
@@ -32,27 +30,28 @@
 	\frametitle{Changes for Integrators and Developers}
 	\framesubtitle{TCA Description (2)}
 
-	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
-
-	\begin{itemize}
-		\item Example 1:
-	\end{itemize}
-
-\begin{lstlisting}
-TCEFORM.<table>.<field>.description = The headline is the text...
-\end{lstlisting}
-
-	\begin{itemize}
-		\item Example 2 - on a per record type basis:
-	\end{itemize}
-
-\begin{lstlisting}
-TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
-\end{lstlisting}
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
 		\item This option can also be used to set a description for a field
 			that does not feature a TCA description yet
+	\end{itemize}
+
+	\begin{itemize}
+		\item Examples:
+		\begin{itemize}
+			\item Example 1 - set/overwrite a description:
+\begin{lstlisting}
+TCEFORM.<table>.<field>.description = The headline is the text...
+\end{lstlisting}
+		\end{itemize}
+
+		\begin{itemize}
+			\item Example 2 - on a per record type basis:
+\begin{lstlisting}
+TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
+\end{lstlisting}
+		\end{itemize}
 	\end{itemize}
 
 \end{frame}
