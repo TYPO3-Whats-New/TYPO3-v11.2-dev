@@ -1,0 +1,42 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		http://typo3.org/download/release-notes/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Feature | 93794 | Override TCA description with TSconfig
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{TCA Description}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item A description can be added to every TCA field in the backend
+			since TYPO3 v9:
+	\end{itemize}
+
+	\begin{figure}
+		\includegraphics[width=0.80\linewidth]{ChangesForIntegratorsAndDevelopers/1617959943-TableConfigurationArrayDescription}
+	\end{figure}
+
+	\begin{itemize}
+		\item It is now possible to override the TCA description property with Page TSconfig:
+	\end{itemize}
+\begin{lstlisting}
+TCEFORM.<table>.<field>.description = The headline is the text...
+\end{lstlisting}
+
+	\begin{itemize}
+		\item This option can also be used to set a description for a field
+			that does not feature a TCA description yet
+	\end{itemize}
+
+% TCEFORM.aTable.aField.types.aType.description = override description for aType
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
