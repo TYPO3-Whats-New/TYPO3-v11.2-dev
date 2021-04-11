@@ -18,33 +18,50 @@
 		\item All language files in the TYPO3 Core use XLIFF version 1.2 now
 		\item This allows us to use a validation schema
 		\item The TYPO3-specific XLIFF file IDs have been dropped too
-	\end{itemize}
-
-	\vspace{0.2cm}
-	\begin{columns}[T]
-		\begin{column}{.1\textwidth}
-		\end{column}
-		\begin{column}{.4\textwidth}
-		\smaller\textbf{< TYPO3 v11.2}\normalsize
+		\item Example:\newline
+\smaller\textbf{< TYPO3 v11.2}\normalsize
 \begin{lstlisting}
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
-  <file t3:id="1521629231" ...>
-  ...
+<file t3:id="1521629231" ...>
+...
 \end{lstlisting}
-				\end{column}
-				\begin{column}{.4\textwidth}
-				\smaller\textbf{>= TYPO3 v11.2}\normalsize
+\vspace{0.2cm}
+\smaller\textbf{>= TYPO3 v11.2}\normalsize
 \begin{lstlisting}
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file ... >
   ...
 \end{lstlisting}
-				\end{column}
-				\begin{column}{.1\textwidth}
-				\end{column}
-		\end{columns}
+
+	\end{itemize}
+
+%	\vspace{0.2cm}
+%	\begin{columns}[T]
+%		\begin{column}{.1\textwidth}
+%		\end{column}
+%		\begin{column}{.4\textwidth}
+%			\smaller\textbf{< TYPO3 v11.2}\normalsize
+%\begin{lstlisting}
+%<?xml version="1.0" encoding="UTF-8"?>
+%<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+%  <file t3:id="1521629231" ...>
+%  ...
+%\end{lstlisting}
+%		\end{column}
+%		\begin{column}{.4\textwidth}
+%			\smaller\textbf{>= TYPO3 v11.2}\normalsize
+%\begin{lstlisting}
+%<?xml version="1.0" encoding="UTF-8"?>
+%<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+%  <file ... >
+%  ...
+%\end{lstlisting}
+%		\end{column}
+%		\begin{column}{.1\textwidth}
+%		\end{column}
+%	\end{columns}
 
 \end{frame}
 
