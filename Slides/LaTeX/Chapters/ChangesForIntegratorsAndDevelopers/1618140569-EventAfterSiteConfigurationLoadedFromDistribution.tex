@@ -1,0 +1,29 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Task | 93687 | Dispatch event after extension install with site config
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{PSR-14 Event on Extension Installation}
+
+	\begin{itemize}
+		\item Extensions (site packages and "distributions") can provide site configurations
+		\item These configurations are deployed when the extension is installed
+		\item A PSR-14 event is now dispatched when the site configuration is imported:\newline
+			\texttt{TYPO3\textbackslash
+				CMS\textbackslash
+				Extensionmanager\textbackslash
+				Event\textbackslash
+				AfterExtensionSiteFilesHaveBeenImportedEvent}
+
+		\end{itemize}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
