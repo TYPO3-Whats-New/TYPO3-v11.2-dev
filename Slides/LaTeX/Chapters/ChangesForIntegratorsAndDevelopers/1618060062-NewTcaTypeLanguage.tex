@@ -28,14 +28,20 @@
 
 	% @TODO: update link to docs.typo3.org
 
-	\vspace{-0.2cm}
+	\vspace{0.2cm}
 	\begin{columns}[T]
 			\begin{column}{.1\textwidth}
 			\end{column}
 			\begin{column}{.4\textwidth}
 			\smaller\textbf{< TYPO3 v11.2}\normalsize
 \begin{lstlisting}
-...
+'config' => [
+  'type' => 'select',
+  'renderType' => 'selectSingle',
+  'foreign_table' => 'sys_language',
+  'items' => [ ... ],
+  'default' => 0
+]
 \end{lstlisting}
 			\end{column}
 			\begin{column}{.4\textwidth}
