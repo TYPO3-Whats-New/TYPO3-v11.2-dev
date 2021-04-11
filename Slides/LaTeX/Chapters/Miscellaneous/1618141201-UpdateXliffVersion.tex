@@ -1,0 +1,51 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Task | 93594 | Update XLIFF version from 1.0 to 1.2
+
+\begin{frame}[fragile]
+	\frametitle{Miscellaneous}
+	\framesubtitle{XLIFF Version 1.2}
+
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
+	\begin{itemize}
+		\item All language files in the TYPO3 Core use XLIFF version 1.2 now
+		\item This allows us to use a validation schema
+		\item The TYPO3-specific XLIFF file IDs have been dropped too
+	\end{itemize}
+
+	\vspace{0.2cm}
+	\begin{columns}[T]
+		\begin{column}{.1\textwidth}
+		\end{column}
+		\begin{column}{.4\textwidth}
+		\smaller\textbf{< TYPO3 v11.2}\normalsize
+\begin{lstlisting}
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file t3:id="1521629231" ...>
+  ...
+\end{lstlisting}
+				\end{column}
+				\begin{column}{.4\textwidth}
+				\smaller\textbf{>= TYPO3 v11.2}\normalsize
+\begin{lstlisting}
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file ... >
+  ...
+\end{lstlisting}
+				\end{column}
+				\begin{column}{.1\textwidth}
+				\end{column}
+		\end{columns}
+
+\end{frame}
+
+% ------------------------------------------------------------------------------
