@@ -12,6 +12,8 @@
 	\frametitle{Changes for Integrators and Developers}
 	\framesubtitle{New TCA type \texttt{language}}
 
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
+
 	\begin{itemize}
 		\item A new TCA field type \texttt{language} has been added
 		\item It displays all available languages for the current context
@@ -25,6 +27,28 @@
 	\end{itemize}
 
 	% @TODO: update link to docs.typo3.org
+
+	\vspace{-0.2cm}
+	\begin{columns}[T]
+			\begin{column}{.1\textwidth}
+			\end{column}
+			\begin{column}{.4\textwidth}
+			\smaller\textbf{< TYPO3 v11.2}\normalsize
+\begin{lstlisting}
+...
+\end{lstlisting}
+			\end{column}
+			\begin{column}{.4\textwidth}
+			\smaller\textbf{>= TYPO3 v11.2}\normalsize
+\begin{lstlisting}
+'config' => [
+  'type' => 'language'
+]
+\end{lstlisting}
+			\end{column}
+			\begin{column}{.1\textwidth}
+			\end{column}
+	\end{columns}
 
 \end{frame}
 
