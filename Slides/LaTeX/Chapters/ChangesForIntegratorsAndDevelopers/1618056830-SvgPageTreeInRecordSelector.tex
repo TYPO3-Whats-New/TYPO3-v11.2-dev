@@ -7,18 +7,39 @@
 % @language	English
 % ------------------------------------------------------------------------------
 % Feature | 92430 | Use SVG Page Tree in Record Selector
+% Feature | 73176 | Filterable Trees in Record Selectors and Link Pickers
 
 \begin{frame}[fragile]
 	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{SVG Page Tree in Record Selector}
+	\framesubtitle{Page and File Tree in the Record Selector}
 
-	% TODO: waiting for .rst file.
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Item A
-		\item Item B
+		\item The page and file tree in the following ... now feature ...
+
+			\begin{itemize}
+				\item \textbf{Record Selector}\newline
+					\smaller(e.g. selecting a shortcut target or a storage page of a plugin)\normalsize
+				\item \textbf{File Selector}\newline
+				 	\smaller(e.g. selecting a file for an IRRE-based FAL-based file reference)\normalsize
+				\item \textbf{Link Picker}\newline
+					\smaller(e.g. selecting a link to a specific page, content element, file, folder, or custom records such as a related news)\normalsize
+			\end{itemize}
+
+		\item Existing TSconfig options remain functional, for example:
+
+			\begin{itemize}\smaller
+				\item \texttt{options.pageTree.altElementBrowserMountPoints}
+				\item \texttt{options.folderTree.altElementBrowserMountPoints}
+			\end{itemize}\smaller
 	\end{itemize}
 
 \end{frame}
+
+% \begin{lstlisting}
+% options.pageTree.altElementBrowserMountPoints
+% options.folderTree.altElementBrowserMountPoints
+% \end{lstlisting}
 
 % ------------------------------------------------------------------------------
