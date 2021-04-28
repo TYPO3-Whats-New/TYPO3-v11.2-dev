@@ -22,12 +22,12 @@
 				Resource\textbackslash
 				Folder}\normalsize
 			now contains a convenience method to retrieve a file
-		\item Examples:\newline
+		\item Example:\newline
+			\vspace{0.2cm}
 			\small\textbf{Old approach} (still possible)\normalsize
 \begin{lstlisting}
 $folder->getStorage()->getFileInFolder("filename.ext", $folder)
 \end{lstlisting}
-			\vspace{0.2cm}
 			\small\textbf{New method} (available since TYPO3 v11.2)\normalsize
 \begin{lstlisting}
 $folder->getFile("filename.ext")
