@@ -15,15 +15,15 @@
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item The following FAL object now contains a convenience method
-			to retrieve a file\newline
+		\item The FAL object
 			\small\texttt{TYPO3\textbackslash
 				CMS\textbackslash
 				Core\textbackslash
 				Resource\textbackslash
 				Folder}\normalsize
-		\item Examples:
-			\small\textbf{Old approach}\normalsize
+			now contains a convenience method to retrieve a file
+		\item Examples:\newline
+			\small\textbf{Old approach} (still possible)\normalsize
 \begin{lstlisting}
 $folder->getStorage()->getFileInFolder("filename.ext", $folder)
 \end{lstlisting}
