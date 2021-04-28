@@ -12,20 +12,19 @@
 	\frametitle{Deprecated/Removed Functions}
 	\framesubtitle{Legacy-tree Navigation Frame}
 
-	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
 		\item Backend modules that use the old \texttt{file\_navframe}
 			registration option are marked as \textbf{deprecated}
 		\item Extension developers are adviced to update the code in file
 			\texttt{ext\_tables.php}.
-		\item OLD:
 \begin{lstlisting}
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModule(
   ...
   [
     // previously: 'navigationFrameModule' => 'file_navframe',
-	'navigationComponentId' => 'TYPO3/CMS/Backend/Tree/FileStorageTreeContainer',
+    'navigationComponentId' => 'TYPO3/CMS/Backend/Tree/FileStorageTreeContainer',
 	...
   ]
 );
