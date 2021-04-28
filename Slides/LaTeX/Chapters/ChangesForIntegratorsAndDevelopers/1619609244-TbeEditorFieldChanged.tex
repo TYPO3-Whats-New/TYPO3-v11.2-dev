@@ -1,0 +1,35 @@
+% ------------------------------------------------------------------------------
+% TYPO3 Version 11.2 - What's New (English Version)
+%
+% @author	Michael Schams <schams.net>
+% @license	Creative Commons BY-NC-SA 3.0
+% @link		https://typo3.org/help/documentation/whats-new/
+% @language	English
+% ------------------------------------------------------------------------------
+% Deprecation | 93975 | Deprecated TBE_EDITOR.fieldChanged()
+
+\begin{frame}[fragile]
+	\frametitle{Changes for Integrators and Developers}
+	\framesubtitle{FormEngine's JavaScript Change Handling}
+
+	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
+
+	\begin{itemize}
+		\item The JavaScript function \texttt{TBE\_EDITOR.fieldChanged()} is
+			marked as \textbf{deprecated}
+		\item Migration option:
+			\vspace{0.2cm}
+\begin{lstlisting}
+// Previous invocation
+TBE_EDITOR.fieldChanged('table', 'field_name', 42);
+
+// Migrate to event-based handling
+document
+  .querySelector('[name="data[table][field_name][42]"]')
+  .dispatchEvent(new Event('change', {bubbles: true, cancelable: true}));
+\end{lstlisting}
+
+	\end{itemize}
+\end{frame}
+
+% ------------------------------------------------------------------------------
