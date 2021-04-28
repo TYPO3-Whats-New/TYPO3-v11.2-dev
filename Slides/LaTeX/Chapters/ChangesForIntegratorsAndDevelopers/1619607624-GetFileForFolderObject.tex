@@ -16,13 +16,13 @@
 
 	\begin{itemize}
 		\item The FAL \texttt{Folder} object now contains a convenience method
-			to retrieve a file
-		\item \smaller\textbf{< TYPO3 v11.2}:\normalsize
+			to retrieve a file\newline
+			\smaller\textbf{Old approach:}\normalsize
 \begin{lstlisting}
 $folder->getStorage()->getFileInFolder("filename.ext", $folder)
 \end{lstlisting}
 
-		\item \smaller\textbf{>= TYPO3 v11.2}:\normalsize
+		\item \smaller\textbf{New approach available since TYPO3 v11.2}:\normalsize
 \begin{lstlisting}
 $folder->getFile("filename.ext")
 \end{lstlisting}
