@@ -9,18 +9,18 @@
 
 \begin{frame}[fragile]
 	\frametitle{Divers}
-	\framesubtitle{Backend User Language}
+	\framesubtitle{Langue utilisateur Backend}
 
 	\begin{itemize}
-		\item The backend user's preferred language is now stored in the
-			database under \texttt{be\_users.lang} even if the user changes
-			the language
-		\item Previously, the language information was only stored in this
-			field initially and then transferred to the user configuration
+		\item La langue préférée de l'utilisateur Backend est enregistrée
+		    en base dans \texttt{be\_users.lang} même quand l'utilisateur
+		    modifie la langue
+		\item Précédemment, l'information de langue était seulement enregistée
+		    dans ce champ initialement puis transféré dans sa configuration
 			\texttt{user->uc[lang]}
-		\item An upgrade wizard migrates existing \texttt{uc} values into
-			the database field
-		\item The \texttt{uc} entry is kept in sync for backwards-compatibility
+		\item Un assistant de mise à jour migre les valeurs existantes de \texttt{uc}
+			dans le champ de la base de données
+		\item L'entrée \texttt{uc} est gardée synchronisée pour la compatibilité
 	\end{itemize}
 
 \end{frame}
