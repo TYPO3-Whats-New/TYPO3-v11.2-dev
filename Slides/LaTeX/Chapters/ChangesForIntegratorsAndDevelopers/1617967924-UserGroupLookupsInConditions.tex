@@ -9,23 +9,23 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{User Group IDs in Conditions}
+	\framesubtitle{Identifiant des groupes de l'utilisateur dans les conditions}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item The following user group IDs are now available in TypoScript:
+		\item Les identifiants de groupe utilisateur suivants sont disponibles en TypoScript~:
 
 		\begin{itemize}
-			\item Currently logged-in \textbf{backend user}\newline
-				(as \texttt{backend.user.userGroupIds} in the frontend and backend)
-			\item Currently logged-in \textbf{frontend user}\newline
-				(as \texttt{frontend.user.userGroupIds} in the frontend)
+			\item De l'\textbf{utilisateur backend} authentifié\newline
+				(sous \texttt{backend.user.userGroupIds} en frontend et backend)
+			\item De l'\textbf{utilisateur frontend} authentifié\newline
+				(sous \texttt{frontend.user.userGroupIds} en frontend)
 		\end{itemize}
 
-		\item This allows integrators to use the Symfony Expression syntax in
-			TypoScript conditions to look-up user groups
-		\item Examples:
+		\item Les intégrateurs peuvent alors utilisé les conditions TypoScript avec la syntaxe
+		    d'expression Symfony pour résoudre les groupes d'utilisateur
+		\item Exemples~:
 \begin{lstlisting}
 [4 in frontend.user.userGroupIds]
 \end{lstlisting}

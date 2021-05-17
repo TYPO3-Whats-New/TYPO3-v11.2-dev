@@ -9,19 +9,19 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{\textit{Hidden}-ViewHelper}
+	\framesubtitle{ViewHelper \textit{Hidden}}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item A new argument \texttt{respectSubmittedDataValue} has been added
-			to the \textit{Hidden}-ViewHelper
-		\item This argument controls the usage of previously submitted values
-			for the respective fields
-		\item Typical use cases are sub requests, when Extbase dispatches a
-			FowardResponse
+		\item L'argument \texttt{respectSubmittedDataValue} est ajouté
+			au ViewHelper \textit{Hidden}
+		\item Cet argument contrôle l'usage des valeurs soumises précédemment pour
+			le champ associé
+		\item Les cas d'usage typiques sont les sous-requêtes, lorsqu'Extbase traite une
+			ForwardResponse
 
-		\item Example:
+		\item Exemple~:
 \begin{lstlisting}
 <f:form.hidden
   property="hiddenProperty"

@@ -9,14 +9,14 @@
 
 \begin{frame}[fragile]
 	\frametitle{Fonctions dépréciées/retirées}
-	\framesubtitle{Legacy-tree Navigation Frame}
+	\framesubtitle{Ancien cadre de navigation arborescente}
 
 	\lstset{basicstyle=\fontsize{6}{8}\ttfamily}
 
 	\begin{itemize}
-		\item Backend modules that use the old \texttt{file\_navframe}
-			registration option are marked as \textbf{deprecated}
-		\item Extension developers are adviced to update the code in file
+		\item Les modules Backend qui utilisent l'ancienne option d'enregistrement
+		    \texttt{file\_navframe} est marquée \textbf{dépréciée}
+		\item Il est conseillé aux développeurs d'extension de mettre à jour leur code dans
 			\texttt{ext\_tables.php}.
 \begin{lstlisting}
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModule(

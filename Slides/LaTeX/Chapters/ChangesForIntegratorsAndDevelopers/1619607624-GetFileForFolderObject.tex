@@ -9,27 +9,27 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{FAL Folder Object}
+	\framesubtitle{Objet dossier FAL}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item The FAL object
+		\item L'objet FAL
 			\small\texttt{TYPO3\textbackslash
 				CMS\textbackslash
 				Core\textbackslash
 				Resource\textbackslash
 				Folder}\normalsize\newline
-			now contains a new method
+			contient la méthode
 			\small\texttt{getFile()}\normalsize
 
-		\item This function provides a convenient way to retrieve a file
-		\item Example:\newline
-			\small\textbf{Old approach} (still possible)\normalsize
+		\item Cet fonction fournis un moyen pratique de récupérer un fichier
+		\item Exemple~:\newline
+			\small\textbf{Ancienne approche} (toujours possible)\normalsize
 \begin{lstlisting}
 $folder->getStorage()->getFileInFolder("filename.ext", $folder)
 \end{lstlisting}
-			\small\textbf{New method} (available since TYPO3 v11.2)\normalsize
+			\small\textbf{Nouvelle méthode} (disponible depuis TYPO3 v11.2)\normalsize
 \begin{lstlisting}
 $folder->getFile("filename.ext")
 \end{lstlisting}

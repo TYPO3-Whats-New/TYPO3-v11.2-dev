@@ -9,18 +9,18 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{PSR-14 Event on Site Configuration Import}
+	\framesubtitle{Événement PSR-14 à l'import d'une configuration de site}
 
 	\lstset{basicstyle=\fontsize{10}{12}\ttfamily}
 
 	\begin{itemize}
-		\item Extensions (site packages and "distributions") can provide site configurations
-		\item These configurations are deployed when the extensions are installed
-		\item A PSR-14 event is now dispatched when the site configuration is imported:
+		\item Les extensions (paquets de site et «~distributions~») peuvent fournir des configurations de site
+		\item Ces configuration sont déployées lorsque l'extension est installée
+		\item Un événement PSR-14 est déclenché lorsque la configuration de site est importée~:
 \begin{lstlisting}
 \TYPO3\CMS\Extensionmanager\Event\AfterExtensionSiteFilesHaveBeenImportedEvent
 \end{lstlisting}
-		\item This enables custom code to access details from the new site configuration
+		\item Ceci permet au code d'accéder aux détails de la nouvelle configuration de site
 	\end{itemize}
 \end{frame}
 

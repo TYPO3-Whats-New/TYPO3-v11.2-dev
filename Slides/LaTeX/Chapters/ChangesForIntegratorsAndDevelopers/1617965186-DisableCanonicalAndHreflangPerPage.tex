@@ -10,19 +10,19 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{Disable \texttt{hreflang} and/or \texttt{canonical} tags}
+	\framesubtitle{Désactiver les balises \texttt{hreflang} et \texttt{canonical}}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item Under some rare circumstances, integrators want to disable the
-			\texttt{hreflang} and/or \texttt{canonical} tags used in links:
+		\item Sous certaines circonstances, les intégrateurs souhaitent désactiver les balises
+			\texttt{hreflang} et \texttt{canonical} utilisés dans les liens~:
 \begin{lstlisting}
 <link rel="alternate" hreflang="de" href="..." />
 <link rel="canonical" href="..." />
 \end{lstlisting}
-		\item This is now possible on a page-by-page basis by using TypoScript
-		\item Examples:
+		\item La désactivation est possible page par page à l'aide de TypoScript
+		\item Exemples~:
 \begin{lstlisting}
 # Disable hreflang attributes:
 config.disableHrefLang = 1

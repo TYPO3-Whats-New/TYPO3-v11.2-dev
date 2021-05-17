@@ -9,16 +9,16 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{Error Page Caching}
+	\framesubtitle{Mise en cache page d'erreur}
 
 	\begin{itemize}
-		\item The content of 404 error pages ("page not found") is now cached
-			in the TYPO3 page cache.
-		\item Integrators and administrators are adviced not to output any
-			sensitive information such as the user name of an authenticated
-			frontend user.
-		\item If the 404 error page shows dynamic content, we recommend to
-			implement a custom PHP-based error handler.
+		\item Le contenu des pages d'erreur 404 ("page not found") est mis en cache
+			dans le cache des pages de TYPO3.
+		\item Il est avisé aux intégrateurs et administrateurs de ne pas inclure
+			d'information sensible comme le nom d'utilisateur d'un utilisateur frontend
+			authentifié.
+		\item Dans le cas où la page d'erreur affiche du contenu dynamique, nous recommandons
+			d'implémenter un gestionnaire d'erreur PHP personnalisé.
 	\end{itemize}
 
 \end{frame}

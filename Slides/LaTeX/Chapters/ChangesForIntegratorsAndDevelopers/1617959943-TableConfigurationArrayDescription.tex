@@ -9,19 +9,19 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{TCA Description (1)}
+	\framesubtitle{Description TCA (1)}
 
 	\begin{itemize}
-		\item Since TYPO3 v9, every TCA field can have a description next to
-			its label\newline
-			For example:
+		\item Depuis TYPO3 v9, tout champ TCA peut avoir une description à côté
+			de son libellé\newline
+			Par exemple~:
 	\end{itemize}
 	\begin{figure}
 		\includegraphics[width=0.70\linewidth]{ChangesForIntegratorsAndDevelopers/1617959943-TableConfigurationArrayDescription}
 	\end{figure}
 	\vspace{-0.4cm}
 	\begin{itemize}
-		\item Integrators can now overwrite the description by using Page TSconfig
+		\item Les intégrateurs peuvent surcharger la description à l'aide du TSconfig de page
 	\end{itemize}
 \end{frame}
 
@@ -29,26 +29,26 @@
 
 \begin{frame}[fragile]
 	\frametitle{Changements pour les intégrateurs et développeurs}
-	\framesubtitle{TCA Description (2)}
+	\framesubtitle{Description TCA (2)}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item This option can also be used to set a description for a field
-			that does not feature a TCA description yet
+		\item L'option permet aussi de définir une description pour un champ
+			qui ne fournit pas déjà de description TCA
 	\end{itemize}
 
 	\begin{itemize}
-		\item Example 1 - set/overwrite a description:
+		\item Exemple 1 - définir/durcharger une description~:
 \begin{lstlisting}
 TCEFORM.<table>.<field>.description = <text>
 TCEFORM.tt_content.header.description = The headline is the text...
 \end{lstlisting}
-		\item Example 2 - on a per record type basis:
+		\item Exemple 2 - on fonction du type d'enregistrement~:
 \begin{lstlisting}
 TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
 \end{lstlisting}
-		\item Example 3 - referring to a language file:
+		\item Exemple 3 - avec un fichier de langue~:
 \begin{lstlisting}
 TCEFORM.tt_content.header.description = LLL:EXT:my_ext/Resources/Private/Language/locallang.xlf:description
 \end{lstlisting}
