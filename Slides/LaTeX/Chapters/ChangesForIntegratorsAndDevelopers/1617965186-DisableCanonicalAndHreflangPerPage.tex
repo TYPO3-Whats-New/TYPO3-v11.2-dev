@@ -9,20 +9,20 @@
 % Feature | 93606 | Possibility to disable canonical per page (related: 93188)
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{Disable \texttt{hreflang} and/or \texttt{canonical} tags}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{\texttt{hreflang} und/oder \texttt{kanonische} Tags deaktivieren}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item Under some rare circumstances, integrators want to disable the
-			\texttt{hreflang} and/or \texttt{canonical} tags used in links:
+		\item In einigen seltenen Fällen möchten Integratoren die in Links verwendeten
+			\texttt{hreflang-} und/oder \texttt{kanonische} Tags deaktivieren:
 \begin{lstlisting}
 <link rel="alternate" hreflang="de" href="..." />
 <link rel="canonical" href="..." />
 \end{lstlisting}
-		\item This is now possible on a page-by-page basis by using TypoScript
-		\item Examples:
+		\item Dies ist nun seitenweise möglich, indem Sie TypoScript verwenden
+		\item Beispiele:
 \begin{lstlisting}
 # Disable hreflang attributes:
 config.disableHrefLang = 1
