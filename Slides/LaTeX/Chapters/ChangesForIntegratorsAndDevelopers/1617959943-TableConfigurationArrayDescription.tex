@@ -8,47 +8,47 @@
 % Feature | 93794 | Override TCA description with TSconfig
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{TCA Description (1)}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{TCA Beschreibung (1)}
 
 	\begin{itemize}
-		\item Since TYPO3 v9, every TCA field can have a description next to
-			its label\newline
-			For example:
+		\item Seit TYPO3 v9 kann jedes TCA-Feld eine Beschreibung neben seiner Bezeichnung
+			haben\newline
+			Zum Beispiel:
 	\end{itemize}
 	\begin{figure}
 		\includegraphics[width=0.70\linewidth]{ChangesForIntegratorsAndDevelopers/1617959943-TableConfigurationArrayDescription}
 	\end{figure}
 	\vspace{-0.4cm}
 	\begin{itemize}
-		\item Integrators can now overwrite the description by using Page TSconfig
+		\item Integratoren können nun die Beschreibung mit Hilfe der Page TSconfig überschreiben.
 	\end{itemize}
 \end{frame}
 
 % ------------------------------------------------------------------------------
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{TCA Description (2)}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{TCA Beschreibung (2)}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item This option can also be used to set a description for a field
-			that does not feature a TCA description yet
+		\item Diese Option kann auch verwendet werden, um eine Beschreibung für ein Field festzulegen,
+			für das noch keine TCA-Beschreibung vorhanden ist
 	\end{itemize}
 
 	\begin{itemize}
-		\item Example 1 - set/overwrite a description:
+		\item Beispiel 1 - Setzen/Überschreiben einer Beschreibung:
 \begin{lstlisting}
 TCEFORM.<table>.<field>.description = <text>
 TCEFORM.tt_content.header.description = The headline is the text...
 \end{lstlisting}
-		\item Example 2 - on a per record type basis:
+		\item Beispiel 2 - auf einer Basis pro Datensatztyp:
 \begin{lstlisting}
 TCEFORM.<table>.<field>.types.<type>.description = Description for <type>
 \end{lstlisting}
-		\item Example 3 - referring to a language file:
+		\item Beispiel 3 - Verweis auf eine Sprachdatei:
 \begin{lstlisting}
 TCEFORM.tt_content.header.description = LLL:EXT:my_ext/Resources/Private/Language/locallang.xlf:description
 \end{lstlisting}
