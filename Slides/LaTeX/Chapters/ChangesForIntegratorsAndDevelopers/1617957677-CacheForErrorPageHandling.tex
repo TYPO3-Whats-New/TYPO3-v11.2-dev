@@ -8,17 +8,17 @@
 % Important | 88824 | Add cache for error page handling
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{Error Page Caching}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{Caching von Fehlerseiten}
 
 	\begin{itemize}
-		\item The content of 404 error pages ("page not found") is now cached
-			in the TYPO3 page cache.
-		\item Integrators and administrators are adviced not to output any
-			sensitive information such as the user name of an authenticated
-			frontend user.
-		\item If the 404 error page shows dynamic content, we recommend to
-			implement a custom PHP-based error handler.
+		\item Der Inhalt von 404-Fehlerseiten ("Seite nicht gefunden") wird nun
+			im Cache im TYPO3-Seitencache gespeichert.
+		\item Integratoren und Administratoren wird empfohlen, keine sensible
+			Informationen wie z.B. den Benutzernamen eines authentifizierten
+			Frontend-Benutzers.
+		\item Wenn die 404-Fehlerseite dynamische Inhalte zeigt, empfehlen wir,
+			einen eigenen PHP-basierten Error-Handler zu implementieren.
 	\end{itemize}
 
 \end{frame}
