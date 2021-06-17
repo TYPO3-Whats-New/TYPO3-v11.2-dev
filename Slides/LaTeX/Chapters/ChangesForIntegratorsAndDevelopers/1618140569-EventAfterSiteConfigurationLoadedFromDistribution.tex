@@ -8,19 +8,19 @@
 % Task | 93687 | Dispatch event after extension install with site config
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
-	\framesubtitle{PSR-14 Event on Site Configuration Import}
+	\frametitle{Änderungen für Integratoren und Entwickler}
+	\framesubtitle{PSR-14 Ereignis beim Importieren der Site-Konfiguration}
 
 	\lstset{basicstyle=\fontsize{10}{12}\ttfamily}
 
 	\begin{itemize}
-		\item Extensions (site packages and "distributions") can provide site configurations
-		\item These configurations are deployed when the extensions are installed
-		\item A PSR-14 event is now dispatched when the site configuration is imported:
+		\item Erweiterungen (Site-Pakete und "Distributionen") können Site-Konfigurationen bereitstellen
+		\item Diese Konfigurationen werden bereitgestellt, wenn die Erweiterungen installiert werden
+		\item Ein PSR-14-Ereignis wird jetzt beim Importieren der Site-Konfiguration versendet:
 \begin{lstlisting}
 \TYPO3\CMS\Extensionmanager\Event\AfterExtensionSiteFilesHaveBeenImportedEvent
 \end{lstlisting}
-		\item This enables custom code to access details from the new site configuration
+		\item Dies ermöglicht dem benutzerdefinierten Code den Zugriff auf Details aus der neuen Site-Konfiguration
 	\end{itemize}
 \end{frame}
 
