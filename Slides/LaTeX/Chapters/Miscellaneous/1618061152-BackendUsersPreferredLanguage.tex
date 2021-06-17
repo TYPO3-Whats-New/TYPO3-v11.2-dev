@@ -8,19 +8,19 @@
 % Feature | 93663 | Backend Users preferred UI language stored as DB field
 
 \begin{frame}[fragile]
-	\frametitle{Miscellaneous}
-	\framesubtitle{Backend User Language}
+	\frametitle{Sonstiges}
+	\framesubtitle{Backend-Benutzersprache}
 
 	\begin{itemize}
-		\item The backend user's preferred language is now stored in the
-			database under \texttt{be\_users.lang} even if the user changes
-			the language
-		\item Previously, the language information was only stored in this
-			field initially and then transferred to the user configuration
-			\texttt{user->uc[lang]}
-		\item An upgrade wizard migrates existing \texttt{uc} values into
-			the database field
-		\item The \texttt{uc} entry is kept in sync for backwards-compatibility
+		\item Die gewünschte Sprache des Backend-Benutzers wird jetzt in der
+			Datenbank unter \texttt{be\_users.lang} gespeichert, auch wenn der 
+			Benutzer die Sprache ändert
+		\item Bisher wurde die Sprachinformation zunächst nur in diesem Feld gespeichert
+			und dann in die Benutzerkonfiguration
+			\texttt{user->uc[lang]} übertragen
+		\item Ein Upgrade-Wizard migriert vorhandene \texttt{uc}-Werte in das
+			Datenbankfeld
+		\item Der Eintrag \texttt{uc} wird aus Gründen der Abwärtskompatibilität beibehalten
 	\end{itemize}
 
 \end{frame}
