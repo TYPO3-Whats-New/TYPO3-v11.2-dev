@@ -8,20 +8,20 @@
 % Important | 93398 | Possibility to ignore submitted values in HiddenViewHelper
 
 \begin{frame}[fragile]
-	\frametitle{Changes for Integrators and Developers}
+	\frametitle{Änderungen für Integratoren und Entwickler}
 	\framesubtitle{\textit{Hidden}-ViewHelper}
 
 	\lstset{basicstyle=\fontsize{8}{10}\ttfamily}
 
 	\begin{itemize}
-		\item A new argument \texttt{respectSubmittedDataValue} has been added
-			to the \textit{Hidden}-ViewHelper
-		\item This argument controls the usage of previously submitted values
-			for the respective fields
-		\item Typical use cases are sub requests, when Extbase dispatches a
-			FowardResponse
+		\item Ein neues Argument \texttt{respectSubmittedDataValue} wurde
+			zum \textit{Hidden}-ViewHelper hinzugefügt
+		\item Dieses Argument steuert die Verwendung von zuvor übermittelten
+			Werten für die jeweiligen Felder
+		\item Typische Anwendungsfälle sind Sub-Requests, bei denen Extbase eine
+			FowardResponse versendet
 
-		\item Example:
+		\item Beispiel:
 \begin{lstlisting}
 <f:form.hidden
   property="hiddenProperty"
